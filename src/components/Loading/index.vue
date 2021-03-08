@@ -1,0 +1,53 @@
+<template>
+    <div class="loading"></div>
+</template>
+<script>
+export default {
+    name: 'Loading'
+}
+</script>
+<style lang="scss" scoped>
+.loading {
+	margin:200px auto;
+	width:50px;
+	height:50px;
+	border:10px solid #e54847;
+	border-bottom:#aaa 10px solid;
+	border-radius:50%;
+	animation:load 1.1s infinite linear;
+	-webkit-animation:load 1.1s infinite linear;
+	-moz-animation:load 1.1s infinite linear;
+	-o-animation:load 1.1s infinite linear;
+}
+@keyframes load {
+	from {
+	transform:rotate(0deg);
+	-ms-transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+        -ms-transform:rotate(360deg);
+    }
+    }@-webkit-keyframes load {
+        from {
+        -webkit-transform:rotate(0deg);
+    }
+    to {
+        -webkit-transform:rotate(360deg);
+    }
+    }@-moz-keyframes load {
+        from {
+        -moz-transform:rotate(0deg);
+    }
+    to {
+        -moz-transform:rotate(360deg);
+    }
+    }@-o-keyframes load {
+        from {
+        -o-transform:rotate(0deg);
+    }
+    to {
+        -o-transform:rotate(360deg);
+    }
+}
+</style>
